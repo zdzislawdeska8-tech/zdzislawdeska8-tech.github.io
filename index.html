@@ -3,6 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przekierowanie</title>
+</head>
+<body>
+
+<p>Przekierowywanie...</p>
+
+<script>
+    // ===== ZMIENIAJ TYLKO TEN LINK =====
+    const LINK = "https://www.example.com/";
+
+    // Dodaje unikalny parametr, żeby przeglądarka nie używała starego cache
+    const NO_CACHE = "?v=" + Date.now();
+
+    window.location.href = LINK + NO_CACHE;
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Minimalizowanie cache -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
